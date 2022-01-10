@@ -674,6 +674,29 @@
     "fields": {}
   },
   {
+    "type": "interval",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "floatp",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "time_unit",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "module_decl",
     "named": true,
     "fields": {},
@@ -1034,7 +1057,7 @@
     "named": false
   },
   {
-    "type": "&del_func",
+    "type": "&delete_func",
     "named": false
   },
   {
@@ -1359,10 +1382,6 @@
   },
   {
     "type": "interval",
-    "named": true
-  },
-  {
-    "type": "interval",
     "named": false
   },
   {
@@ -1411,11 +1430,11 @@
   },
   {
     "type": "pattern",
-    "named": true
+    "named": false
   },
   {
     "type": "pattern",
-    "named": false
+    "named": true
   },
   {
     "type": "port",
@@ -1472,6 +1491,10 @@
   {
     "type": "time",
     "named": false
+  },
+  {
+    "type": "time_unit",
+    "named": true
   },
   {
     "type": "timeout",
