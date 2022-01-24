@@ -1048,6 +1048,18 @@
                 "value": "when"
               },
               {
+                "type": "CHOICE",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "capture_list"
+                  },
+                  {
+                    "type": "BLANK"
+                  }
+                ]
+              },
+              {
                 "type": "STRING",
                 "value": "("
               },
@@ -4265,7 +4277,7 @@
     },
     "minor_comment": {
       "type": "PATTERN",
-      "value": "#[^#].*\\n"
+      "value": "#[^#][^\\n]*"
     },
     "zeekygen_head_comment": {
       "type": "PATTERN",
@@ -4278,12 +4290,20 @@
     "zeekygen_next_comment": {
       "type": "PATTERN",
       "value": "##[^\\n]*"
+    },
+    "nl": {
+      "type": "PATTERN",
+      "value": "\\n"
     }
   },
   "extras": [
     {
       "type": "PATTERN",
-      "value": "[ \\t\\n]+"
+      "value": "[ \\t]+"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "nl"
     },
     {
       "type": "SYMBOL",

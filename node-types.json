@@ -866,6 +866,10 @@
           "named": true
         },
         {
+          "type": "capture_list",
+          "named": true
+        },
+        {
           "type": "case_list",
           "named": true
         },
@@ -1330,11 +1334,11 @@
   },
   {
     "type": "file",
-    "named": false
+    "named": true
   },
   {
     "type": "file",
-    "named": true
+    "named": false
   },
   {
     "type": "floatp",
@@ -1417,6 +1421,10 @@
     "named": false
   },
   {
+    "type": "nl",
+    "named": true
+  },
+  {
     "type": "of",
     "named": false
   },
@@ -1438,11 +1446,11 @@
   },
   {
     "type": "port",
-    "named": true
+    "named": false
   },
   {
     "type": "port",
-    "named": false
+    "named": true
   },
   {
     "type": "print",
@@ -1470,11 +1478,11 @@
   },
   {
     "type": "string",
-    "named": true
+    "named": false
   },
   {
     "type": "string",
-    "named": false
+    "named": true
   },
   {
     "type": "subnet",
