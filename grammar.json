@@ -4277,23 +4277,23 @@
     },
     "minor_comment": {
       "type": "PATTERN",
-      "value": "#[^#][^\\n]*"
+      "value": "#[^#][^\\r\\n]*"
     },
     "zeekygen_head_comment": {
       "type": "PATTERN",
-      "value": "##![^\\n]*"
+      "value": "##![^\\r\\n]*"
     },
     "zeekygen_prev_comment": {
       "type": "PATTERN",
-      "value": "##<[^\\n]*"
+      "value": "##<[^\\r\\n]*"
     },
     "zeekygen_next_comment": {
       "type": "PATTERN",
-      "value": "##[^\\n]*"
+      "value": "##[^\\r\\n]*"
     },
     "nl": {
       "type": "PATTERN",
-      "value": "\\n"
+      "value": "\\r?\\n"
     }
   },
   "extras": [
