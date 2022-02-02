@@ -1,5 +1,0 @@
-This is an automatically generated parser for tree-sitter-zeek. Do not edit
-files in here, update/create via "tree-sitter generate" in the main
-tree-sitter-zeek repo.
-
-For details, see: https://tree-sitter.github.io/tree-sitter/
