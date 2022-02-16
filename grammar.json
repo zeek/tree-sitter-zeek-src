@@ -65,7 +65,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "preproc"
+          "name": "preproc_directive"
         }
       ]
     },
@@ -495,7 +495,7 @@
           "type": "REPEAT",
           "content": {
             "type": "SYMBOL",
-            "name": "preproc"
+            "name": "preproc_directive"
           }
         },
         {
@@ -1158,7 +1158,7 @@
           "value": -1,
           "content": {
             "type": "SYMBOL",
-            "name": "preproc"
+            "name": "preproc_directive"
           }
         },
         {
@@ -4011,7 +4011,7 @@
         }
       ]
     },
-    "preproc": {
+    "preproc_directive": {
       "type": "CHOICE",
       "members": [
         {
@@ -4070,6 +4070,32 @@
             {
               "type": "STRING",
               "value": "@load-sigs"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "file"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "@load-plugin"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "id"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "@unload"
             },
             {
               "type": "SYMBOL",
@@ -4176,6 +4202,19 @@
         }
       ]
     },
+    "string_directive": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "@DIR"
+        },
+        {
+          "type": "STRING",
+          "value": "@FILENAME"
+        }
+      ]
+    },
     "event_hdr": {
       "type": "SEQ",
       "members": [
@@ -4272,8 +4311,17 @@
       "value": "([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z][A-Za-z0-9\\-]*"
     },
     "string": {
-      "type": "PATTERN",
-      "value": "\"([^\\\\\\r\\n\\\"]|\\\\([^\\r\\n]|[0-7]+|x[0-9a-fA-F]+))*\""
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "\"([^\\\\\\r\\n\\\"]|\\\\([^\\r\\n]|[0-7]+|x[0-9a-fA-F]+))*\""
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string_directive"
+        }
+      ]
     },
     "minor_comment": {
       "type": "PATTERN",
