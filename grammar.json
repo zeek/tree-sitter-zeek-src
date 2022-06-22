@@ -2230,7 +2230,7 @@
         "members": [
           {
             "type": "STRING",
-            "value": "&broker_store_allow_complex_type"
+            "value": "&broker_allow_complex_type"
           },
           {
             "type": "STRING",
