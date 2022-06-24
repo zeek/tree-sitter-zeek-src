@@ -1065,11 +1065,11 @@
     "named": false
   },
   {
-    "type": "&broker_store",
+    "type": "&broker_allow_complex_type",
     "named": false
   },
   {
-    "type": "&broker_store_allow_complex_type",
+    "type": "&broker_store",
     "named": false
   },
   {
