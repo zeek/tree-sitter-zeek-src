@@ -1097,6 +1097,10 @@
     "named": false
   },
   {
+    "type": "&group",
+    "named": false
+  },
+  {
     "type": "&is_assigned",
     "named": false
   },
