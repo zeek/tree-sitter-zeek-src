@@ -4365,10 +4365,6 @@
         }
       ]
     },
-    "minor_comment": {
-      "type": "PATTERN",
-      "value": "#[^#][^\\r\\n]*"
-    },
     "zeekygen_head_comment": {
       "type": "PATTERN",
       "value": "##![^\\r\\n]*"
@@ -4380,6 +4376,10 @@
     "zeekygen_next_comment": {
       "type": "PATTERN",
       "value": "##[^\\r\\n]*"
+    },
+    "minor_comment": {
+      "type": "PATTERN",
+      "value": "#[^\\r\\n]*"
     },
     "nl": {
       "type": "PATTERN",
@@ -4397,10 +4397,6 @@
     },
     {
       "type": "SYMBOL",
-      "name": "minor_comment"
-    },
-    {
-      "type": "SYMBOL",
       "name": "zeekygen_head_comment"
     },
     {
@@ -4410,6 +4406,10 @@
     {
       "type": "SYMBOL",
       "name": "zeekygen_next_comment"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "minor_comment"
     }
   ],
   "conflicts": [],
