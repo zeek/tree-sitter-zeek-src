@@ -630,21 +630,6 @@
     }
   },
   {
-    "type": "init",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "init_class",
     "named": true,
     "fields": {}
@@ -658,7 +643,7 @@
       "required": true,
       "types": [
         {
-          "type": "init",
+          "type": "expr",
           "named": true
         },
         {
@@ -1374,11 +1359,11 @@
   },
   {
     "type": "file",
-    "named": false
+    "named": true
   },
   {
     "type": "file",
-    "named": true
+    "named": false
   },
   {
     "type": "floatp",
